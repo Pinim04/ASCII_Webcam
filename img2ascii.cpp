@@ -30,7 +30,7 @@ int main()
     if (!cap.isOpened())
     {
         cout << "Video capture is not open!" << endl;
-        //return -1;
+        return -1;
     }
     
 

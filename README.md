@@ -29,13 +29,27 @@ With the c++ file opened:
 - To just compile, on VS Code click on `Terminal > Run Task` or `Ctrl + Shift + B`, then choose `build opencv`
 - To compile and run, on VS Code click on `Terminal > Run Task` then choose `run opencv`
 
-*Quick tip:* in `Terminal > Configure Default Build Task` choose `run opencv`, then press `Ctrl + Shift + B` to build and run the code
+*Quick tips:*
+- In `Terminal > Configure Default Build Task` choose `run opencv`, then press `Ctrl + Shift + B` to build and run the code
+- To best view the *ASCII webcam* printed on the terminal, use at least a 1920x1080 screen and expand the teminal window in VS Code
 
 ## Possible Issues
-If a diffrent version of OpenCV-MinGW-Build is choosen, make sure you update the lib versions in the `tasks.json` file
+If a diffrent version of OpenCV-MinGW-Build is choosen, make sure to update the lib versions in the `tasks.json` file
 
 Example:
-- OpenCV-MinGW-Build version 4.1.1: ```...
+- OpenCV-MinGW-Build version 4.1.1:
+```
+...
+
 "-llibopencv_calib3d411",
-...```
-- OpenCV-MinGW-Build version 4.5.2: ```"-llibopencv_calib3d452",```
+
+...
+```
+- OpenCV-MinGW-Build version 4.5.2:
+```
+...
+
+"-llibopencv_calib3d452",
+
+...
+```

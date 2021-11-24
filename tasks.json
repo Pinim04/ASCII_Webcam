@@ -40,7 +40,7 @@
             "group": "build"
         },
         {
-            "label": "run",
+            "label": "run opencv",
             "type": "shell",
             "command": "./${fileBasenameNoExtension}",
             "dependsOn": "build opencv",

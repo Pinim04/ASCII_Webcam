@@ -1,0 +1,56 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build opencv",
+            "type": "shell",
+            "command": "g++.exe",
+            "args": [
+                "${file}",
+                "-g",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}.exe",
+                "-I",
+                "C:/opencv/OpenCV-MinGW-Build/include",
+                "-L",
+                "C:/msys64/mingw64/bin",
+                "-llibopencv_calib3d452",
+                "-llibopencv_core452",
+                "-llibopencv_dnn452",
+                "-llibopencv_features2d452",
+                "-llibopencv_flann452",
+                "-llibopencv_highgui452",
+                "-llibopencv_imgcodecs452",
+                "-llibopencv_imgproc452",
+                "-llibopencv_ml452",
+                "-llibopencv_objdetect452",
+                "-llibopencv_photo452",
+                "-llibopencv_stitching452",
+                "-llibopencv_video452",
+                "-llibopencv_videoio452"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "run",
+            "type": "shell",
+            "command": "./${fileBasenameNoExtension}",
+            "dependsOn": "build opencv",
+            "problemMatcher": [
+                "$eslint-stylish"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

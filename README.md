@@ -23,3 +23,6 @@ Open the project folder in VS Code
 Configure `tasks.json`, `launch.json`, `c_cpp_properties.json` files in `.vscode` folder as they are in this repository
 
 ## Compile and run
+With the c++ file opened:
+- To just compile, on VS Code click on `Terminal > Run Task` or `Ctrl + Shift + B`, then choose `build opencv`
+- To compile and run, on VS Code click on `Terminal > Run Task` then choose `run opencv`

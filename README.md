@@ -22,7 +22,20 @@ Open the project folder in VS Code
 
 Configure `tasks.json`, `launch.json`, `c_cpp_properties.json` files in `.vscode` folder as they are in this repository
 
+Restart the system
+
 ## Compile and run
 With the c++ file opened:
 - To just compile, on VS Code click on `Terminal > Run Task` or `Ctrl + Shift + B`, then choose `build opencv`
 - To compile and run, on VS Code click on `Terminal > Run Task` then choose `run opencv`
+
+*Quick tip:* in `Terminal > Configure Default Build Task` choose `run opencv`, then press `Ctrl + Shift + B` to build and run the code
+
+## Possible Issues
+If a diffrent version of OpenCV-MinGW-Build is choosen, make sure you update the lib versions in the `tasks.json` file
+
+Example:
+- OpenCV-MinGW-Build version 4.1.1: ```...
+"-llibopencv_calib3d411",
+...```
+- OpenCV-MinGW-Build version 4.5.2: ```"-llibopencv_calib3d452",```

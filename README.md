@@ -1,6 +1,11 @@
 # ASCII_Webcam
 A c++/openCV project that captures the webcam stream and prints it as ASCII grayscale with VS Code
 
+Webcam
+![input](https://user-images.githubusercontent.com/59936009/143299826-00484e1b-1b9e-4f3a-8206-189436589e7b.png)
+Terminal
+![output](https://user-images.githubusercontent.com/59936009/143299940-bca1c231-f1aa-4fd6-9094-2a98b9849bb3.png)
+
 ## Installation
 *This installation section is relative to a Visual Studio Code implamentation*
 

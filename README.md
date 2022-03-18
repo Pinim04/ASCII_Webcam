@@ -23,11 +23,11 @@ Example:
 - OpenCv binaries Path: ```C:\opencv\OpenCV-MinGW-Build\x64\mingw\bin```
 
 ## Setup
-Open the project folder in VS Code
+1- Open the project folder in VS Code
 
-Configure `tasks.json`, `launch.json`, `c_cpp_properties.json` files in `.vscode` folder as they are in this repository
+2- Configure `tasks.json`, `launch.json`, `c_cpp_properties.json` files in `.vscode` folder as they are in this repository
 
-Restart the system
+3- Restart the system
 
 ## Compile and run
 With the c++ file opened:
